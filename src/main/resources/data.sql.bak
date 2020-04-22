@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS patients ;
+
+CREATE TABLE patients  (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  personalcode INT NOT NULL,
+  condition VARCHAR(250) NOT NULL,
+);
+
+INSERT INTO patients (personalcode,condition) VALUES
+  (12345,'Lengva'),
+  (74638,'Kritine'),
+  (87014,'Pradine'),
+  (11234,'Sunki');
