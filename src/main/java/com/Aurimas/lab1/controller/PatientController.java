@@ -293,7 +293,7 @@ public class PatientController {
         Patient patient = patientRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Patient not found for this id :: " + id));
         try {
-            patient.setpersonalCode(patientContactDetails.getPersonalCode());
+            patient.setpersonalCode(patientContactDetails.getId());
             patient.setCondition(patientContactDetails.getCondition());
             patientRepository.save(patient);
             patientContactDetails.setId((int)patient.getId());

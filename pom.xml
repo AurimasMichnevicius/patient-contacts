@@ -8,7 +8,7 @@
 		<version>2.2.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.jokubas</groupId>
+	<groupId>com.Aurimas</groupId>
 	<artifactId>lab1</artifactId>
 	<version>0.0.1</version>
 	<name>lab1</name>

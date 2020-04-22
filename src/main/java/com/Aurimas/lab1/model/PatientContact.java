@@ -9,30 +9,17 @@ import javax.persistence.Table;
 
 public class PatientContact {
     private long id;
-    private int personalCode;
 	private String condition;
     private String surname;
     private String name;
     private String number;
     private String email;
 	
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public long getId() {
         return id;
     }
-
-    @Column(name = "personalcode", nullable = false)
-    public int getPersonalCode() {
-        return personalCode;
-    }
-	    @Column(name = "condition", nullable = false)
     public String getCondition() {
         return condition;
-    }
-    public void setpersonalCode(int personalCode) {
-        this.personalCode = personalCode;
     }
 	public void setCondition(String condition)
 	{
