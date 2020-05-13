@@ -8,19 +8,23 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 public class PatientContact {
-    private long id;
+    private int id;
 	private String condition;
     private String surname;
     private String name;
     private String number;
     private String email;
 	
-    public long getId() {
+
+	
+    public int getId() {
         return id;
     }
+
     public String getCondition() {
         return condition;
     }
+	
 	public void setCondition(String condition)
 	{
 		this.condition = condition;
